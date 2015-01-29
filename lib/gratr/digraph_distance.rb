@@ -80,8 +80,8 @@ module GRATR
       #
       # O(n*log(n) + m) complexity
       def dijkstras_algorithm(s, weight = nil, zero = 0)
-        q = vertices; distance = { s => zero }; path = {}
-        while not q.empty?
+        q = vertices; distance = { s => zero }; path = {}; v=0
+        while not q.empty? and not v.nil?
           v = (q & distance.keys).inject(nil) {|a,k| (!a.nil?) && (distance[a] < distance[k]) ? a : k} 
           q.delete(v)
           (q & adjacent(v)).each do |u|
