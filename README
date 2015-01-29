@@ -1,5 +1,11 @@
 = GRAph Theory in Ruby (GRATR)
 
+NOTES ON THIS FORK (https://github.com/Richard-Mathie/gratr):
+- This isn't an official fork.
+- Official fork [here?(ruby jems)](https://rubygems.org/gems/gratr19)  or [here(github)](https://github.com/amalagaura/gratr)
+- Fix for dijkstras_algorithm so that it still runs if there are dangling nodes
+
+
 link:../gratr.jpg GRATR is a framework for graph data structures and algorithms.
 
 This project is a fork of Horst Duchene's RGL library. 
